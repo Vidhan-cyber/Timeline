@@ -1,0 +1,135 @@
+
+
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.timeline-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0;
+  background: #f4f4f9;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.timeline-item {
+  display: inline-block;
+  text-align: center;
+  background: white;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  position: relative;
+}
+
+.timeline-item .content {
+  padding: 20px;
+}
+
+.timeline-item .date {
+  background: #2575fc;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 4px;
+  background: #ddd;
+  z-index: -1;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.timeline-item:nth-child(odd) .content {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.timeline-item:nth-child(even) .content {
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body {
+  background: url('https://image.slidesdocs.com/responsive-images/background/handdrawn-style-blue-cute-education-math-lovely-powerpoint-background_a698b5341c__960_540.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  background: linear-gradient(to right, #f0f8ff, #f4f4f4);
+}
+body {
+  background-color: #4d4d4d;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+}
